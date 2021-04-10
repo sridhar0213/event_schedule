@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assess.css">
+</head>
+
+<body>
+    <div class="container-fluid bg-container overflow-auto">
+        <h1 class="text-center color pt-3">Welcome to Our Page</h1>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="p-5 col-8 col-md-4">
+                <form id="addUserForm" class="inner-card">
+                    <h1>Sign up</h1>
+                    <div class="mb-3">
+                        <label for="firstName">First Name</label>
+                        <input placeholder="Enter your First Name" type="text" id="firstName" class="border form-control">
+                        <p class="error" id="firstNameErrMsg"></p>
+                    </div>
+                    <div class="mb-3">
+                        <label for="lastName">Last Name</label>
+                        <input placeholder="Enter your Last Name" type="text" id="lastName" class="border form-control">
+                        <p class="error" id="lastNameErrMsg"></p>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email">Email</label>
+                        <input placeholder="Enter your Email" type="email" id="email" class="border form-control">
+                        <p class="error" id="emailErrMsg"></p>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password">Password</label>
+                        <input pattern=".{5,}" placeholder="Minimum 5 characters" type="password" id="password" class="border form-control">
+                        <p class="error" id="passwordErrMsg"></p>
+                    </div>
+                    <button type="submit" class="border btn btn-primary">Signup</button>
+                    <p class="correct pt-3" id="invalidDetails"></p>
+                </form>
+            </div>
+
+
+            <div class="p-5 col-8 col-md-4">
+                <form id="loginForm" class="inner-card">
+                    <h1>Login</h1>
+                    <div class="mb-3">
+                        <label for="emailSign">Email</label>
+                        <input placeholder="Enter your Registered Mail id" type="text" id="emailSign" class="border form-control">
+
+                    </div>
+                    <div class="mb-3">
+                        <label for="passwordSign">Password</label>
+                        <input placeholder="Enter your Password" type="password" id="passwordSign" class="border form-control">
+
+                    </div>
+                    <button type="submit" class="border btn btn-success">Login</button>
+                    <p class="error pt-3" id="invalid"></p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="assess.js">
+    </script>
+</body>
+
+</html>
