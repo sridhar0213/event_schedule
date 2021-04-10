@@ -12,7 +12,7 @@ let logout = document.getElementById("logout")
 
 
 logout.addEventListener("click", function() {
-    window.location = "assess.html";
+    window.location = "index.html";
 })
 
 function eventsFromLocalStorage() {
